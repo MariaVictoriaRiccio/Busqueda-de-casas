@@ -250,7 +250,7 @@ window.PROPERTIES = [
     notes: "Aviso declara casa, 2 dormitorios, jardín, cochera y expensas ARS 0. Se incorpora pese a superar el ideal de USD 110.000 porque cumple el resto de los criterios y es reciente.",
     url: "https://casa.mercadolibre.com.ar/MLA-2081077209-casa-en-venta-_JM",
     photo: ""
-  ,
+  },
   {
     id: "vb-redsuma-581904",
     title: "Casa 3 ambientes sobre lote propio con jardín",
