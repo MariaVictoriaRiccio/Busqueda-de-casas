@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f4ee">
+  <title>Casas Zona Norte — shortlist de Toia</title>
+  <meta name="description" content="Shortlist colaborativa de casas en Zona Norte.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="eyebrow">Búsqueda de casas</div>
+      <h1>Casas Zona Norte</h1>
+      <p class="subtitle">Shortlist de Toia · casas con jardín, sin expensas y mínimo 2 dormitorios</p>
+    </div>
+    <div class="actions">
+      <button class="ghost" id="resetBtn" type="button">Limpiar filtros</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="pill">Base editable</span>
+        <h2>Una sola lista, sin repetir avisos ni perder descartes.</h2>
+        <p>Filtrá por zona, precio y estado. Los favoritos y la papelera quedan guardados en este navegador.</p>
+      </div>
+      <div class="stats" aria-label="Resumen">
+        <article><strong id="countAll">0</strong><span>Todas</span></article>
+        <article><strong id="countFav">0</strong><span>Favoritos</span></article>
+        <article><strong id="countTrash">0</strong><span>Papelera</span></article>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="Filtros">
+      <div class="segmented" role="tablist">
+        <button class="tab active" data-view="all" type="button">Todas</button>
+        <button class="tab" data-view="favorites" type="button">❤️ Favoritos</button>
+        <button class="tab" data-view="trash" type="button">🗑️ Papelera</button>
+      </div>
+
+      <div class="filters">
+        <label>
+          <span>Buscar</span>
+          <input id="searchInput" type="search" placeholder="Zona, calle, inmobiliaria…">
+        </label>
+        <label>
+          <span>Localidad</span>
+          <select id="zoneFilter">
+            <option value="">Todas</option>
+          </select>
+        </label>
+        <label>
+          <span>Precio máximo</span>
+          <select id="priceFilter">
+            <option value="">Sin tope</option>
+            <option value="80000">USD 80.000</option>
+            <option value="90000">USD 90.000</option>
+            <option value="100000">USD 100.000</option>
+            <option value="110000">USD 110.000</option>
+            <option value="120000">USD 120.000</option>
+          </select>
+        </label>
+        <label class="check">
+          <input id="gardenFilter" type="checkbox">
+          <span>Solo con jardín confirmado</span>
+        </label>
+      </div>
+    </section>
+
+    <section id="emptyState" class="empty" hidden>
+      <div class="empty-icon">⌂</div>
+      <h3>No hay propiedades para mostrar</h3>
+      <p id="emptyCopy">La base está lista para cargar propiedades.</p>
+    </section>
+
+    <section id="cards" class="grid" aria-live="polite"></section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <div class="photo-wrap">
+        <img class="photo" alt="" loading="lazy">
+        <div class="photo-fallback">Foto no disponible</div>
+        <button class="fav-btn" type="button" aria-label="Marcar como favorita">♡</button>
+        <span class="status-badge"></span>
+      </div>
+      <div class="card-body">
+        <div class="card-topline">
+          <span class="zone"></span>
+          <span class="price"></span>
+        </div>
+        <h3 class="title"></h3>
+        <div class="facts"></div>
+        <p class="note"></p>
+        <div class="meta"></div>
+        <div class="card-actions">
+          <a class="primary-link" target="_blank" rel="noopener noreferrer">Ver aviso original</a>
+          <button class="trash-btn danger" type="button">Mandar a Papelera</button>
+          <button class="restore-btn" type="button">↩ Restaurar</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <footer>
+    <p>Base de búsqueda de Toia · datos de cada aviso sujetos a confirmación con la publicación original.</p>
+  </footer>
+
+  <script src="properties.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
