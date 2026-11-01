@@ -290,8 +290,10 @@ window.PROPERTIES = [
   {
     "id": "sm-ml-3726619798",
     "title": "Casa con jardín y depósito",
-    "locality": "San Martín",
-    "address": "Dardo Rocha 1520, San Martín",
+    "locality": "Villa Lynch",
+    "address": "Dardo Rocha 1520, Villa Lynch",
+    "trashDefault": true,
+    "trashReason": "Zona excluida: Villa Lynch",
     "price": 100000,
     "bedrooms": 3,
     "coveredArea": 146,
