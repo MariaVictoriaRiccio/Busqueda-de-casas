@@ -250,5 +250,23 @@ window.PROPERTIES = [
     notes: "Aviso declara casa, 2 dormitorios, jardín, cochera y expensas ARS 0. Se incorpora pese a superar el ideal de USD 110.000 porque cumple el resto de los criterios y es reciente.",
     url: "https://casa.mercadolibre.com.ar/MLA-2081077209-casa-en-venta-_JM",
     photo: ""
+  ,
+  {
+    id: "vb-redsuma-581904",
+    title: "Casa 3 ambientes sobre lote propio con jardín",
+    locality: "Villa Ballester",
+    address: "Reconquista 4400, Villa Ballester",
+    price: 78000,
+    bedrooms: 2,
+    coveredArea: 90,
+    lotArea: 167,
+    gardenConfirmed: true,
+    agency: "Red Suma / publicación activa",
+    consulted: "2026-11-01",
+    published: "Fecha de publicación a confirmar",
+    status: "Verificada",
+    notes: "Publicación activa. Casa sobre lote propio, 2 dormitorios, jardín delantero, patio trasero con espacios verdes, cochera y expensas ARS 0. Apta crédito.",
+    url: "https://testred78.kitepropcrm.com/site/properties/581904/venta-casa-3-ambientes-sobre-lote-propio-167-m2-patio-cochera-y-jardin-en-villa-ballester",
+    photo: ""
   }
 ];
