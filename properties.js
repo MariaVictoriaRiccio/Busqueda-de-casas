@@ -288,24 +288,6 @@ window.PROPERTIES = [
     photo: ""
   },
   {
-    id: "sa-ml-2881065414",
-    title: "Casa 3 ambientes con jardín",
-    locality: "San Andrés",
-    address: "San Andrés, General San Martín",
-    price: 62000,
-    bedrooms: 2,
-    coveredArea: 100,
-    lotArea: 184,
-    gardenConfirmed: true,
-    agency: "Keller Williams Pilar",
-    consulted: "2026-11-01",
-    published: "Publicado hace 8 meses",
-    status: "Verificada · dirección exacta a confirmar",
-    notes: "Aviso declara casa, 2 dormitorios, jardín, patio, terraza, 2 cocheras y expensas ARS 0. La dirección concreta no aparece visible en el resultado consultado y queda pendiente de confirmación.",
-    url: "https://casa.mercadolibre.com.ar/MLA-2881065414-casa-en-venta-2-dormitorios-en-san-andres-general-san-martin-gba-norte-_JM",
-    photo: ""
-  },
-  {
     id: "sm-ml-3726619798",
     title: "Casa con jardín y depósito",
     locality: "San Martín",
